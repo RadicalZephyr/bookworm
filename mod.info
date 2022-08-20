@@ -1,4 +1,4 @@
-name=PipeWrenchModTemplate
+name=Bookworm
 poster=poster.png
-description=PipeWrenchModTemplate
-id=pipewrench_mod_template
+description=Read all the books.
+id=bookworm
