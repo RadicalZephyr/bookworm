@@ -1,0 +1,32 @@
+[workshop]
+id = ""
+name = "Bookworm"
+version = "0.1.0"
+tags = ["Build 41", "Interface"]
+
+description = """
+# Bookworm
+
+An inventory convenience for reading many things in succession. 
+
+This is probably more useful if you also have a fast-reading 
+mod, but you do you.
+
+Fast reading mods:
+
+[Cat's Faster Reading Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2690908199)
+[Cat's Faster Reading Mod (Slower)](https://steamcommunity.com/sharedfiles/filedetails/?id=2694816684)
+"""
+
+[mod.bookworm]
+id = "bookworm"
+name = "Bookworm"
+
+description = """
+# Bookworm
+
+An inventory convenience for reading many things in succession. 
+
+This is probably more useful if you also have a fast-reading 
+mod, but you do you.
+"""
