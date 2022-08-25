@@ -37,7 +37,7 @@
     "del-cli": "^5.0.0"
   },
   "dependencies": {
-    "@asledgehammer/pipewrench": "^41.73.21",
+    "@asledgehammer/pipewrench": "^41.74.2",
     "@asledgehammer/pipewrench-events": "^41.73.0"
   }
 }
