@@ -30,7 +30,7 @@
   "homepage": "https://github.com/RadicalZephyr/bookworm#readme",
   "devDependencies": {
     "@asledgehammer/tstl-pipewrench": "^0.0.8",
-    "lua-types": "^2.11.0",
+    "lua-types": "^2.12.1",
     "npm-watch": "^0.11.0",
     "typescript": "^4.6.2",
     "typescript-to-lua": "^1.4.2",
