@@ -1,8 +1,10 @@
 version=1
+id=2857910464
 title=Bookworm
 description=Read all the books.
 description=
-description=Select many books and queue reading them all in a
-description=row. Probably more useful with a fast reading mod.
-tags=
+description=Select many books and queue reading them all in a row. Probably more useful with a fast reading mod.
+description=
+description=NOTE: if you select a stack of books/comics/newspapers etc. this mod will absolutely cause you to read every single one of them, which may or may not be what you want.
+tags=Build 41;Interface
 visibility=public
