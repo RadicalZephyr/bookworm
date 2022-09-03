@@ -5,7 +5,6 @@ BOOKWORM.BuildReadMenu = function(player, context, items)
    for i,v in ipairs(items) do
       testItem = v;
       if not instanceof(v, "InventoryItem") then
-         --print(#v.items);
          if #v.items == 2 then
             editItem = v.items[1];
          end

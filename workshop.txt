@@ -1,0 +1,8 @@
+version=1
+title=Bookworm
+description=Read all the books.
+description=
+description=Select many books and queue reading them all in a
+description=row. Probably more useful with a fast reading mod.
+tags=
+visibility=public
