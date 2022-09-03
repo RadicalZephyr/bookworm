@@ -28,7 +28,7 @@ BOOKWORM.doLiteratureMenu = function(context, items, player)
       -- If there's an existing read option replace the onSelect function
       readOption.onSelect = BOOKWORM.onLiteratureItems;
    else
-      context:addOption(name, items, BOOKWORM.onLiteratureItems, player);
+      readOption = context:insertOptionAfter(getText("ContextMenu_Equip_Secondary"), name, items, BOOKWORM.onLiteratureItems, player);
 
       if getSpecificPlayer(player):isAsleep() then
          readOption.notAvailable = true;
