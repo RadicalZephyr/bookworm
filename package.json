@@ -39,7 +39,7 @@
     "typescript-to-lua": "^1.4.2"
   },
   "dependencies": {
-    "@asledgehammer/pipewrench": "^41.73.21",
+    "@asledgehammer/pipewrench": "^41.74.3",
     "@asledgehammer/pipewrench-events": "^41.73.0"
   }
 }
