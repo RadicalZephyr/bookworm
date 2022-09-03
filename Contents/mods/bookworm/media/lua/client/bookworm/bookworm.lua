@@ -24,12 +24,20 @@ BOOKWORM.BuildReadMenu = function(player, context, items)
 end
 
 BOOKWORM.doLiteratureMenu = function(context, items, player)
-   local readOption = context:addOption(getText("ContextMenu_Read"), items, BOOKWORM.onLiteratureItems, player);
-   if getSpecificPlayer(player):isAsleep() then
-      readOption.notAvailable = true;
-      local tooltip = ISInventoryPaneContextMenu.addToolTip();
-      tooltip.description = getText("ContextMenu_NoOptionSleeping");
-      readOption.toolTip = tooltip;
+   local name = getText("ContextMenu_Read");
+   local readOption = context:getOptionFromName(name);
+   if readOption then
+      -- If there's an existing read option replace the onSelect function
+      readOption.onSelect = BOOKWORM.onLiteratureItems;
+   else
+      context:addOption(name, items, BOOKWORM.onLiteratureItems, player);
+
+      if getSpecificPlayer(player):isAsleep() then
+         readOption.notAvailable = true;
+         local tooltip = ISInventoryPaneContextMenu.addToolTip();
+         tooltip.description = getText("ContextMenu_NoOptionSleeping");
+         readOption.toolTip = tooltip;
+      end
    end
 end
 
