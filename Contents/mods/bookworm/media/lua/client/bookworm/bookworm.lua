@@ -2,6 +2,7 @@ local BOOKWORM = {}
 
 BOOKWORM.BuildReadMenu = function(player, context, items)
    local isAllLiterature = true;
+   local c = 0;
    for i,v in ipairs(items) do
       testItem = v;
       if not instanceof(v, "InventoryItem") then
@@ -16,9 +17,10 @@ BOOKWORM.BuildReadMenu = function(player, context, items)
          isAllLiterature = false;
          return
       end
+      c = c + 1;
    end
 
-   if isAllLiterature and not getSpecificPlayer(player):getTraits():isIlliterate() then
+   if c > 1 and isAllLiterature and not getSpecificPlayer(player):getTraits():isIlliterate() then
       BOOKWORM.doLiteratureMenu(context, items, player)
    end
 end
