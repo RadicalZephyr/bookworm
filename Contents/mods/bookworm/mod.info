@@ -2,3 +2,5 @@ name=Bookworm
 poster=poster.png
 id=bookworm
 description=Select many books and queue reading them all in sequence.
+description=
+description=NOTE: if you select a stack of books/comics/newspapers etc. this mod will absolutely cause you to read every single one of them, which may or may not be what you want.
