@@ -11,6 +11,11 @@ or may not be what you want.
 
 You can take a look at the code on Github. https://github.com/RadicalZephyr/bookworm/
 
+## License
+
+This is free and unencumbered software released into the public domain.
+
+See UNLICENSE file for more details.
 
 Workshop ID: 2857910464
 Mod ID: bookworm

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cp -vr workshop.txt preview.png Contents ~/Zomboid/Workshop/Bookworm/
+cp -vr UNLICENSE workshop.txt preview.png Contents ~/Zomboid/Workshop/Bookworm/
