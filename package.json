@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/RadicalZephyr/bookworm#readme",
   "devDependencies": {
-    "@asledgehammer/tstl-pipewrench": "^0.0.8",
+    "@asledgehammer/tstl-pipewrench": "^0.0.13",
     "del-cli": "^5.0.0",
     "lua-types": "^2.11.0",
     "markdown-to-bbcode": "^0.3.2",
