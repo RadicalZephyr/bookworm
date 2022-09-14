@@ -5,7 +5,7 @@
  */
 
 // PipeWrench API.
-import { getPlayer, KahluaTable, InventoryItem } from '@asledgehammer/pipewrench';
+import { KahluaTable, InventoryItem, getSpecificPlayer, getText, ISInventoryPane, ISInventoryPaneContextMenu } from '@asledgehammer/pipewrench';
 
 // PipeWrench Events API.
 import * as Events from '@asledgehammer/pipewrench-events';
@@ -30,6 +30,35 @@ export function buildReadMenu(player: number, context: KahluaTable, items: Kahlu
         count += 1;
     }
 
+    let traits: any = getSpecificPlayer(player).getTraits();
+    if (count > 1 && isAllLiterature && !traits.isIlliterate()) {
+        doLiteratureMenu(player, context, items);
+    }
+}
+
+export function doLiteratureMenu(player: number, context: KahluaTable, items: KahluaTable) {
+    let name = getText("ContextMenu_Read");
+    let readOption = context.getOptionFromName(name);
+
+    if (readOption) {
+        readOption.onSelect = onLiteratureItems;
+    } else {
+        readOption = context.insertOptionAfter(getText("ContextMenu_Equip_Secondary"), name, items, onLiteratureItems, player);
+
+        if (getSpecificPlayer(player).isAsleep()) {
+            readOption.notAvailable = true;
+            let tooltip = ISInventoryPaneContextMenu.addToolTip();
+            tooltip.description = getText("ContextMenu_NoOptionSleeping");
+            readOption.toolTip = tooltip;
+        }
+    }
+}
+
+export function onLiteratureItems(items: KahluaTable, player: number) {
+    items = ISInventoryPane.getActualItems(items);
+    for (const [_index, k] of items) {
+        ISInventoryPaneContextMenu.readItem(k, player);
+    }
 }
 
 Events.onGameStart.addListener(() => {
