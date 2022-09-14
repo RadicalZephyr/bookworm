@@ -1,1 +1,13 @@
-{}
+{
+  "modInfo": {
+    "id": "bookworm",
+    "name": "Bookworm",
+    "url": "https://github.com/RadicalZephyr/bookworm/",
+    "poster": "./preview.png",
+    "description": "# Bookworm\n\nAn inventory convenience for reading many things in succession.\n\nThis is probably more useful if you also have a fast-reading\nmod, but you do you.\nFast reading mods:\n\n[Cat's Faster Reading Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2690908199)\n[Cat's Faster Reading Mod (Slower)](https: //steamcommunity.com/sharedfiles/filedetails/?id=2694816684)"
+  },
+  "modelsDir": "src/models",
+  "texturesDir": "src/textures",
+  "soundDir": "src/sound",
+  "scriptsDir": "src/scripts"
+}
