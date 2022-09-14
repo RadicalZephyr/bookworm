@@ -11,10 +11,6 @@ import { KahluaTable, InventoryItem, getSpecificPlayer, getText, ISInventoryPane
 import * as Events from '@asledgehammer/pipewrench-events';
 
 
-// if isAllLiterature and not getSpecificPlayer(player): getTraits(): isIlliterate() then
-//   ISInventoryPaneContextMenu.doLiteratureMenu(context, items, player)
-// end
-
 export function buildReadMenu(player: number, context: KahluaTable, items: KahluaTable) {
     let isAllLiterature = true;
     let count = 0;
